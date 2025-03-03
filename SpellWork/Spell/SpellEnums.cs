@@ -433,6 +433,7 @@ namespace SpellWork.Spell
         SPELL_EFFECT_338                                = 338,
         SPELL_EFFECT_UI_ACTION                          = 339,
         SPELL_EFFECT_340                                = 340,
+        SPELL_EFFECT_LEARN_WARBAND_SCENE                = 341,
         TOTAL_SPELL_EFFECTS
     };
 
@@ -1081,6 +1082,10 @@ namespace SpellWork.Spell
         SPELL_AURA_MOD_EXPLORATION_EXPERIENCE                   = 637,
         SPELL_AURA_MOD_CRITICAL_BLOCK_AMOUNT                    = 638,
         SPELL_AURA_639                                          = 639,
+        SPELL_AURA_640                                          = 640,
+        SPELL_AURA_641                                          = 641,
+        SPELL_AURA_642                                          = 642,
+        SPELL_AURA_MOD_RANGED_ATTACK_SPEED_FLAT                 = 643, // NYI
         TOTAL_AURAS
     }
 
