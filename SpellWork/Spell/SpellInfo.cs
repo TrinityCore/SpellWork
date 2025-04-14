@@ -228,16 +228,16 @@ namespace SpellWork.Spell
                 while (proc != 0)
                 {
                     if ((proc & 1) != 0)
-                        sb.AppendFormatLine("  {0}", SpellEnums.ProcFlagDesc[i]);
+                        sb.AppendFormatLine("  {0:D2} {1}", i, Enum.GetName((ProcFlags)(1 << i)).NormalizeString("PROC_FLAG_"));
                     ++i;
                     proc >>= 1;
                 }
-                i = 32;
+                i = 0;
                 proc = ProcFlagsEx;
                 while (proc != 0)
                 {
                     if ((proc & 1) != 0)
-                        sb.AppendFormatLine("  {0}", SpellEnums.ProcFlagDesc[i]);
+                        sb.AppendFormatLine("  {0:D2} {1}", i + 32, Enum.GetName((ProcFlags2)(1 << i)).NormalizeString("PROC_FLAG_2_"));
                     ++i;
                     proc >>= 1;
                 }
