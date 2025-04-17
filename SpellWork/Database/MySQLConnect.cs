@@ -204,7 +204,7 @@ namespace SpellWork.Database
                             {
                                 MaxLevel = (short)reader.GetUInt32(50),
                                 BaseLevel = (short)reader.GetUInt32(51),
-                                SpellLevel = (shortnt)reader.GetUInt32(52)
+                                SpellLevel = (short)reader.GetUInt32(52)
                             };
 
                             spellInfo.Misc = new SpellMiscEntry()
