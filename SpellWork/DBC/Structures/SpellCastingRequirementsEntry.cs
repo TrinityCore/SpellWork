@@ -7,7 +7,7 @@ namespace SpellWork.DBC.Structures
         [Index(true)]
         public uint ID;
         public int SpellID;
-        public byte FacingCasterFlags;
+        public int FacingCasterFlags;
         public ushort MinFactionID;
         public int MinReputation;
         public ushort RequiredAreasID;

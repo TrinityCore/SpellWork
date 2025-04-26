@@ -188,7 +188,7 @@ namespace SpellWork.Spell
 
         #region CastingRequirements
         public uint RequiredAreasId => CastingRequirements?.RequiredAreasID ?? 0;
-        public uint FacingCasterFlags => CastingRequirements?.FacingCasterFlags ?? 0;
+        public int FacingCasterFlags => CastingRequirements?.FacingCasterFlags ?? 0;
         public uint MinFactionID => CastingRequirements?.MinFactionID ?? 0;
         public int MinReputation => CastingRequirements?.MinReputation ?? 0;
         public uint RequiredAuraVision => CastingRequirements?.RequiredAuraVision ?? 0;
@@ -228,7 +228,7 @@ namespace SpellWork.Spell
                 while (proc != 0)
                 {
                     if ((proc & 1) != 0)
-                        sb.AppendFormatLine("  {0:D2} {1}", i, Enum.GetName((ProcFlags)(1 << i)).NormalizeString("PROC_FLAG_"));
+                        sb.AppendFormatLine("  {0:D2} {1}", i, Enum.GetName((ProcFlags)(1 << i))?.NormalizeString("PROC_FLAG_") ?? $"PROC_FLAG_0x{1 << i:X}");
                     ++i;
                     proc >>= 1;
                 }
@@ -237,7 +237,7 @@ namespace SpellWork.Spell
                 while (proc != 0)
                 {
                     if ((proc & 1) != 0)
-                        sb.AppendFormatLine("  {0:D2} {1}", i + 32, Enum.GetName((ProcFlags2)(1 << i)).NormalizeString("PROC_FLAG_2_"));
+                        sb.AppendFormatLine("  {0:D2} {1}", i + 32, Enum.GetName((ProcFlags2)(1 << i))?.NormalizeString("PROC_FLAG_2_") ?? $"PROC_FLAG_2_0x{1 << i:X}");
                     ++i;
                     proc >>= 1;
                 }
