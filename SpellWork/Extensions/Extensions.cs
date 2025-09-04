@@ -168,7 +168,7 @@ namespace SpellWork.Extensions
 
                 var dr = dt.NewRow();
                 dr["ID"] = str;
-                dr["NAME"] = $"{i:000} - {str.Name}";
+                dr["NAME"] = str.Name;
                 dt.Rows.Add(dr);
                 ++i;
             }
