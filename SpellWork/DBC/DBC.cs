@@ -19,7 +19,7 @@ namespace SpellWork.DBC
 {
     public static class DBC
     {
-        public const string Version = "SpellWork 12.0.7 (67808)";
+        public const string Version = "SpellWork 12.1.5";
         public const uint MaxLevel = 90;
         public const uint MaxItemLevel = 1300;
 
@@ -48,7 +48,7 @@ namespace SpellWork.DBC
         public static readonly IDictionary<int, SpellInfo> SpellInfoStore = new ConcurrentDictionary<int, SpellInfo>();
         public static readonly IDictionary<int, ISet<int>> SpellTriggerStore = new Dictionary<int, ISet<int>>();
 
-        public static readonly IDictionary<uint, ISet<SpellInfo>> SpellModifyStoreByFamily = new Dictionary<uint, ISet<SpellInfo>>();
+        public static readonly IDictionary<int, ISet<SpellInfo>> SpellModifyStoreByFamily = new Dictionary<int, ISet<SpellInfo>>();
         public static readonly IDictionary<uint, ISet<SpellInfo>> SpellModifyStoreByLabel = new Dictionary<uint, ISet<SpellInfo>>();
 
         private enum Progress

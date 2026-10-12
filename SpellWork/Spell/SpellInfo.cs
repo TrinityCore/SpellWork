@@ -113,7 +113,7 @@ namespace SpellWork.Spell
         #region SpellClassOptions
         // SpellClassOptions
         public uint ModalNextSpell => ClassOptions?.ModalNextSpell ?? 0;
-        public uint SpellFamilyName => ClassOptions?.SpellClassSet ?? 0;
+        public int SpellFamilyName => ClassOptions?.SpellClassSet ?? 0;
         public uint[] SpellClassMask => Array.ConvertAll(ClassOptions?.SpellClassMask ?? new int[4], i => (uint)i);
         #endregion
 
