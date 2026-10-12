@@ -733,7 +733,7 @@ namespace SpellWork.Spell
                     {
                         var gtScaling = GameTable<GtSpellScalingEntry>.GetRecord((int)level);
                         Debug.Assert(gtScaling != null);
-                        value = gtScaling.GetColumnForClass(effect.ScalingClass);
+                        value = gtScaling.Value.GetColumnForClass(effect.ScalingClass);
                     }
                 }
 
