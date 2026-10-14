@@ -14,14 +14,10 @@
     <Content Include="New Icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="DBCD.IO" Version="2.3.1" />
     <PackageReference Include="MySql.Data">
-      <Version>9.3.0</Version>
+      <Version>26.7.0</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="DBFileReaderLib">
-      <HintPath>..\packages\DBFileReaderLib.1.0.0.0\lib\DBFileReaderLib.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

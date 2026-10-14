@@ -1,4 +1,4 @@
-using DBFileReaderLib;
+using DBCD.IO;
 using SpellWork.Database;
 using SpellWork.DBC.Structures;
 using SpellWork.Extensions;
@@ -550,7 +550,7 @@ namespace SpellWork.DBC
             if (!type.IsGenericType || type.GetGenericTypeDefinition() != typeof(Storage<>))
                 return default;
 
-            var db2Reader = new DBReader($@"{Settings.Default.DbcPath}\{Settings.Default.Locale}\{name}.db2");
+            var db2Reader = new DBParser($@"{Settings.Default.DbcPath}\{Settings.Default.Locale}\{name}.db2");
 
             dynamic storage = Activator.CreateInstance(type, db2Reader);
 
