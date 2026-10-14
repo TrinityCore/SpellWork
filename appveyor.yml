@@ -8,6 +8,7 @@ before_build:
 - cmd: dotnet restore
 build:
   verbosity: minimal
+  project: SpellWork.slnx
 artifacts:
 - path: SpellWork\bin
   name: SpellWork
