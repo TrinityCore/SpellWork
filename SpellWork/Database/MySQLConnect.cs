@@ -68,15 +68,16 @@ namespace SpellWork.Database
                                     reader.GetUInt32(6)
                                 },
                                 ProcFlags            = (ProcFlags)reader.GetUInt32(7),
-                                SpellTypeMask        = (ProcFlagsSpellType)reader.GetUInt32(8),
-                                SpellPhaseMask       = (ProcFlagsSpellPhase)reader.GetUInt32(9),
-                                HitMask              = (ProcFlagsHit)reader.GetUInt32(10),
-                                AttributesMask       = (ProcAttributes)reader.GetUInt32(11),
-                                DisableEffectsMask   = reader.GetUInt32(12),
-                                ProcsPerMinute       = reader.GetFloat(13),
-                                Chance               = reader.GetFloat(14),
-                                Cooldown             = reader.GetUInt32(15),
-                                Charges              = reader.GetByte(16)
+                                ProcFlags2           = (ProcFlags2)reader.GetUInt32(8),
+                                SpellTypeMask        = (ProcFlagsSpellType)reader.GetUInt32(9),
+                                SpellPhaseMask       = (ProcFlagsSpellPhase)reader.GetUInt32(10),
+                                HitMask              = (ProcFlagsHit)reader.GetUInt32(11),
+                                AttributesMask       = (ProcAttributes)reader.GetUInt32(12),
+                                DisableEffectsMask   = reader.GetUInt32(13),
+                                ProcsPerMinute       = reader.GetFloat(14),
+                                Chance               = reader.GetFloat(15),
+                                Cooldown             = reader.GetUInt32(16),
+                                Charges              = reader.GetByte(17)
                             });
                         }
                     }
