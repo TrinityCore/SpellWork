@@ -652,7 +652,7 @@ namespace SpellWork.Spell
         SPELL_AURA_MOD_UI_HEALING_RANGE                         = 188,
         SPELL_AURA_MOD_RATING                                   = 189,
         SPELL_AURA_MOD_FACTION_REPUTATION_GAIN                  = 190,
-        SPELL_AURA_USE_NORMAL_MOVEMENT_SPEED                    = 191,
+        SPELL_AURA_SPEED_LIMIT_MAX                              = 191,
         SPELL_AURA_MOD_MELEE_RANGED_HASTE                       = 192,
         SPELL_AURA_MOD_MELEE_RANGED_CASTING_HASTE               = 193,
         SPELL_AURA_MOD_TARGET_ABSORB_SCHOOL                     = 194,
@@ -667,12 +667,12 @@ namespace SpellWork.Spell
         SPELL_AURA_PREVENT_INTERRUPT                            = 203,
         SPELL_AURA_PREVENT_CORPSE_RELEASE                       = 204,  // NYI
         SPELL_AURA_MOD_CHARGE_RECOVERY_BY_TYPE_MASK             = 205,
-        SPELL_AURA_MOD_INCREASE_VEHICLE_FLIGHT_SPEED            = 206,
+        SPELL_AURA_MOD_INCREASE_FLIGHT_SPEED                    = 206,
         SPELL_AURA_MOD_INCREASE_MOUNTED_FLIGHT_SPEED            = 207,
-        SPELL_AURA_MOD_INCREASE_FLIGHT_SPEED                    = 208,
-        SPELL_AURA_MOD_MOUNTED_FLIGHT_SPEED_ALWAYS              = 209,
-        SPELL_AURA_MOD_VEHICLE_SPEED_ALWAYS                     = 210,
-        SPELL_AURA_MOD_FLIGHT_SPEED_NOT_STACK                   = 211,
+        SPELL_AURA_MOD_INCREASE_FLIGHT_SPEED_ALWAYS             = 208,
+        SPELL_AURA_MOD_INCREASE_MOUNTED_FLIGHT_SPEED_ALWAYS     = 209,
+        SPELL_AURA_MOD_INCREASE_FLIGHT_SPEED_NOT_STACK          = 210,
+        SPELL_AURA_MOD_INCREASE_MOUNTED_FLIGHT_SPEED_NOT_STACK  = 211,
         SPELL_AURA_MOD_HONOR_GAIN_PCT_FROM_SOURCE               = 212,
         SPELL_AURA_MOD_RAGE_FROM_DAMAGE_DEALT                   = 213,
         SPELL_AURA_214                                          = 214,
@@ -766,7 +766,7 @@ namespace SpellWork.Spell
         SPELL_AURA_302                                          = 302,
         SPELL_AURA_MOD_DAMAGE_DONE_VERSUS_AURASTATE             = 303,
         SPELL_AURA_MOD_FAKE_INEBRIATE                           = 304,
-        SPELL_AURA_MOD_MINIMUM_SPEED                            = 305,
+        SPELL_AURA_SPEED_LIMIT_MIN_PCT                          = 305,
         SPELL_AURA_MOD_CRIT_CHANCE_FOR_CASTER                   = 306,
         SPELL_AURA_CAST_WHILE_WALKING_BY_SPELL_LABEL            = 307,
         SPELL_AURA_MOD_CRIT_CHANCE_FOR_CASTER_WITH_ABILITIES    = 308,
@@ -834,7 +834,7 @@ namespace SpellWork.Spell
         SPELL_AURA_SPELL_OVERRIDE_NAME_GROUP                    = 370,  // picks a random SpellOverrideName id from a group (group id in miscValue)
         SPELL_AURA_DISABLE_AUTOATTACK                           = 371,
         SPELL_AURA_OVERRIDE_MOUNT_FROM_SET                      = 372,  // NYI
-        SPELL_AURA_MOD_SPEED_NO_CONTROL                         = 373,  // NYI
+        SPELL_AURA_MOD_INCREASE_SPEED_NO_CONTROL                = 373,
         SPELL_AURA_MODIFY_FALL_DAMAGE_PCT                       = 374,
         SPELL_AURA_HIDE_MODEL_AND_EQUIPEMENT_SLOTS              = 375,
         SPELL_AURA_MOD_CURRENCY_GAIN_FROM_SOURCE                = 376,  // NYI
@@ -898,7 +898,7 @@ namespace SpellWork.Spell
         SPELL_AURA_434                                          = 434,
         SPELL_AURA_435                                          = 435,
         SPELL_AURA_MOD_ENVIRONMENTAL_DAMAGE_TAKEN               = 436,
-        SPELL_AURA_MOD_MINIMUM_SPEED_RATE                       = 437,
+        SPELL_AURA_SET_SPEED                                    = 437,
         SPELL_AURA_PRELOAD_PHASE                                = 438,  // NYI
         SPELL_AURA_439                                          = 439,
         SPELL_AURA_MOD_MULTISTRIKE_DAMAGE                       = 440,  // NYI
@@ -988,7 +988,7 @@ namespace SpellWork.Spell
         SPELL_AURA_MOD_ADV_FLYING_OVER_MAX_DECELERATION         = 524,
         SPELL_AURA_DISPLAY_PROFESSION_EQUIPMENT                 = 525, // NYI; MiscValue[0] = Profession (enum, not id)
         SPELL_AURA_526                                          = 526,
-        SPELL_AURA_527                                          = 527,
+        SPELL_AURA_MOD_INCREASE_BACKWARD_SPEED                  = 527,
         SPELL_AURA_ALLOW_BLOCKING_SPELLS                        = 528, // NYI
         SPELL_AURA_MOD_SPELL_BLOCK_CHANCE                       = 529, // NYI
         SPELL_AURA_530                                          = 530,
@@ -2451,7 +2451,7 @@ namespace SpellWork.Spell
         SPELL_ATTR15_UNK7                                               = 0x00000080, // TITLE Unknown attribute 7@Attr15
         SPELL_ATTR15_UNK8                                               = 0x00000100, // TITLE Unknown attribute 8@Attr15
         SPELL_ATTR15_UNK9                                               = 0x00000200, // TITLE Unknown attribute 9@Attr15
-        SPELL_ATTR15_UNK10                                              = 0x00000400, // TITLE Unknown attribute 10@Attr15
+        SPELL_ATTR15_AURA_HAS_SEPARATE_STACK_DURATIONS                  = 0x00000400, // TITLE Aura has separate stack durations
         SPELL_ATTR15_UNK11                                              = 0x00000800, // TITLE Unknown attribute 11@Attr15
         SPELL_ATTR15_UNK12                                              = 0x00001000, // TITLE Unknown attribute 12@Attr15
         SPELL_ATTR15_UNK13                                              = 0x00002000, // TITLE Unknown attribute 13@Attr15
